@@ -1,0 +1,57 @@
+//task  1
+#include <stdio.h>
+
+using namespace std;
+int main(int argc, char** argv) {
+const int a = 45;
+const int b = 67;
+const int c = 24;
+const int d = 43;
+float e = a * (b+(c/d));
+
+printf("result: %f", e);
+
+    return 0;
+
+}
+//task  2
+#include <stdio.h>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+int a = 23;
+int b = 21;
+int c = (a > b) ? 2*(a-21) : b;
+printf("adress: %d", c);
+
+    return 0;
+
+}
+//task  3
+#include <iostream>
+void change();
+extern int a;
+extern int b;
+extern int c;
+extern int d;
+int main(int argc, char** argv) {
+    change();
+float e = a * (b+(c/d));
+printf("result: %f", e);
+
+    return 0;
+
+}
+extern
+int a;
+int b;
+int c;
+int d;
+void change() {
+  a = 10;
+  b = 1;
+  c = 14;
+  d = 15;
+    return 0;
+}
